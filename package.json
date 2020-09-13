@@ -1,0 +1,18 @@
+{
+  "name": "invoice_generator",
+  "version": "1.0.0",
+  "description": "first attempt at making the kzilla recruitment website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "lite-server": "run-lite-server"
+  },
+  "author": "Rishit Saraf",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "lite-server": "^2.5.4",
+    "nodemon": "^2.0.4"
+  }
+}
