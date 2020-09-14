@@ -11,6 +11,14 @@ body{
   background: linear-gradient(90deg, #FDC5F5 0%, #F7AEF8 25%, #B388EB 50%, #8093F1 75%, #72DDF7 100%);
 }
 
+.wrapper2{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient( 180deg,#72DDF7 0%,#8093F1 25%,#B388EB 50%,#F7AEF8 75%,#FDC5F5 100%);
+}
+
 navbar{
   position:fixed;
 }
@@ -28,13 +36,6 @@ input:focus {
   border-color: #8093F1;
 }
 
-.wrapper1{
-  position:absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: #FBEFF5 ;
-}
 
 .main_heading{
   font-family: 'Poppins', sans-serif;
@@ -44,6 +45,41 @@ input:focus {
   font-size: 55px;
   font-weight:lighter;
   transform: translate(-50%, -50%);
+  color: white;
+  margin: 0;
+  
+}
+
+.new_heading{
+  font-family: 'Poppins', sans-serif;
+  position:absolute;
+  top:45%;
+  left:50%;
+  font-size: 25px;
+  font-weight:bold;
+  transform: translate(-50%, -50%);
+  color: purple;
+  margin: 0;
+}
+
+.top_heading{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  position:absolute;
+  top:20%;
+  left: 24%;
+  font-weight:bold;
+  color: purple;
+}
+
+.sub_heading{
+  font-family: 'Poppins', sans-serif;
+  position:absolute;
+  top:65%;
+  left:18%;
+  font-size: 21px;
+  font-weight:lighter;
+
   color: white;
   margin: 0;
   
@@ -132,4 +168,87 @@ img{
 
 .card_inner{
   border:none;
+}
+
+.boxnew{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.boxnew span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animatenew 2s infinite;
+}
+
+.boxnew span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.boxnew span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animatenew{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+.table-editable {
+  position: relative;
+}
+
+.table-editable .glyphicon {
+  font-size: 20px;
+}
+
+.table-remove {
+  color: #700;
+  cursor: pointer;
+}
+
+.table-remove:hover {
+  color: #f00;
+}
+
+.table-up,
+.table-down {
+  color: #007;
+  cursor: pointer;
+}
+
+.table-up:hover,
+.table-down:hover {
+  color: #00f;
+}
+
+.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.table-add:hover {
+  color: #0b0;
 }
