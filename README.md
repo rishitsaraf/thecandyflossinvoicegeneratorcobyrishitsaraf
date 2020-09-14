@@ -1,6 +1,6 @@
 # The Candy Floss Themed Invoice Generator<br>
 
-<b> I have hosted the project on <a href = "https://rishitsaraf.me"> The Cotton Candy Invoice Generator </a> for ypur ease. </b>
+<b> I have hosted the project on <a href = "https://rishitsaraf.me"> The Cotton Candy Invoice Generator </a> for your ease. </b>
 
 <hr>
 I tried to make some functionality of the website such as database storage and customer analysics but it was constantly giving me errors so I removed it.<br>
