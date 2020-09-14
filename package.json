@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "glyphicons": "^0.2.0",
     "lite-server": "^2.5.4",
     "nodemon": "^2.0.4"
   }
