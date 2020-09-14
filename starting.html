@@ -15,10 +15,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+
+
+
     <title> Invoice Generator - Homepage </title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body style="background-color: #FFCCFF;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,15 +34,27 @@
               <a class="nav-link" href="./starting.html">Create Your Invoice</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
         </div>
-      </nav>
-    <div class="wrapper1">
-        <div class="container">
+    </nav>
+
+    <div class="d-sm-block d-md-block d-lg-none">
+      <h2 class="new_heading">
+        Please use a browser. Our chefs are still preparing the cotton candy for mobile platform. We regret the inconvenience caused. Meanwhile have a candy 🍭
+      </h2>
+    </div>
+    <div class="top_heading d-lg-block d-md-none d-sm-none d-none">
+      Use the Following Template to Create Your Invoice - 
+    </div>
+
+    
+    
+        <div class="container invoice_page d-lg-block d-md-none d-sm-none d-none">
             <div class="card card1">
             <div class="card-body">
+
               <div class="row">
                 <div class="col-8">
                     <label for="invnum" >Invoice Number- &nbsp </label>
@@ -50,13 +65,15 @@
                     <input type="text" value="DD/MM/YYYY" name= "date" onfocus="this.value=''"> <br> <br>
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-8 ml-auto">
-                    <label for="date" >Upload Your Logo- &nbsp </label>
+                    <label for="logo" >Upload Your Logo- &nbsp </label>
                     <input type='file' onchange="readURL(this);" />
                     <img id="blah" src=" " alt="LOGO APPEARS HERE" /> <br><br>
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-6">
                     <div class="card">
@@ -68,34 +85,34 @@
                               <div class="card-body">
                                 <div class="row">
                                       <div class="col-8">
-                                        <label for="date" >Country- &nbsp </label>
-                                        <input type="text" value="INDIA 🇮🇳" name= "date" onfocus="this.value=''"> <br> <br>
+                                        <label for="country" >Country- &nbsp </label>
+                                        <input type="text" value="INDIA 🇮🇳" name= "country" onfocus="this.value=''"> <br> <br>
                                       </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                      <label for="date" >Firm Name- &nbsp </label>
-                                      <input type="text" value="Willy Wonka's Cotton Candy Enterprises" size="33" name= "date" onfocus="this.value=''"> <br> <br>
+                                      <label for="firm" >Firm Name- &nbsp </label>
+                                      <input type="text" value="Willy Wonka's Cotton Candy Enterprises" size="33" name= "firm" onfocus="this.value=''"> <br> <br>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                      <label for="date" >GSTIN- &nbsp </label>
-                                      <input type="text" value="FLUFFYCANDY777" size="17" name= "date" onfocus="this.value=''"> <br> <br>
+                                      <label for="gstin" >GSTIN- &nbsp </label>
+                                      <input type="text" value="FLUFFYCANDY777" size="17" name= "gstin" onfocus="this.value=''"> <br> <br>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                      <label for="date" >ADDRESS- &nbsp </label>
-                                      <input type="text" value="10, Delicious Street" size="40" name= "date" onfocus="this.value=''"> <br> <br>
-                                      <input type="text" value="Tasty Road" size="40" name= "date" onfocus="this.value=''"> <br> <br>
-                                      <input type="text" value="Indore - 452001" size="40" name= "date" onfocus="this.value=''"> <br> <br>
+                                      <label for="addseller" >ADDRESS- &nbsp </label>
+                                      <input type="text" value="10, Delicious Street" size="35" name= "addseller" onfocus="this.value=''"> <br> <br>
+                                      <input type="text" value="Tasty Road" size="35" name= "addseller" onfocus="this.value=''"> <br> <br>
+                                      <input type="text" value="Indore - 452001" size="35" name= "addseller" onfocus="this.value=''"> <br> <br>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                      <label for="date" >PAN- &nbsp </label>
-                                      <input type="text" value="TASTYFLUFFY" size="20" name= "date" onfocus="this.value=''"> <br> <br>
+                                      <label for="panseller" >PAN- &nbsp </label>
+                                      <input type="text" value="TASTYFLUFFY" size="20" name= "panseller" onfocus="this.value=''"> <br> <br>
                                     </div>
                                 </div>
                               </div>
@@ -103,6 +120,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6">
                     <div class="card">
                         <div class="card-header">
@@ -110,31 +128,100 @@
                         </div>
                         <div class="card-body">
                             <div class="row">
+                              <div class="col-8">
+                                <label for="countrycust" >Country- &nbsp </label>
+                                <input type="text" value="INDIA 🇮🇳" name= "countrycust" onfocus="this.value=''"> <br> <br>
+                              </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-6">
-                                    <label for="date" >Customer's First Name- &nbsp </label>
-                                    <input type="text" value="Willy"  name= "date" onfocus="this.value=''"> <br> <br>
+                                    <label for="fname" >Customer's First Name- &nbsp </label>
+                                    <input type="text" value="Willy"  name= "fname" onfocus="this.value=''"> <br> <br>
                                 </div>
                                 <div class="col-6">
-                                    <label for="date" > Last Name- &nbsp </label>
-                                    <input type="text" value="Wonka"  name= "date" onfocus="this.value=''"> <br> <br>
+                                    <label for="lname" > Last Name- &nbsp </label>
+                                    <input type="text" value="Wonka"  name= "lname" onfocus="this.value=''"> <br> <br>
                                 </div>
                             </div>
                             <div class="row">
+                              <div class="col">
+                               <label for="pancust" > PAN (optional)- &nbsp </label>
+                               <input type="text" value="WONKA777"  name= "pancust" onfocus="this.value=''"> <br> <br>
+                              </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-12">
-                                  <label for="date" >ADDRESS- &nbsp </label>
-                                  <input type="text" value="10, Delicious Street" size="40" name= "date" onfocus="this.value=''"> <br> <br>
-                                  <input type="text" value="Tasty Road" size="40" name= "date" onfocus="this.value=''"> <br> <br>
-                                  <input type="text" value="Indore - 452001" size="40" name= "date" onfocus="this.value=''"> <br> <br>
+                                  <label for="address" >ADDRESS- &nbsp </label>
+                                  <input type="text" value="10, Delicious Street" size="40" name= "address" onfocus="this.value=''"> <br> <br>
+                                  <input type="text" value="Tasty Road" size="40" name= "address" onfocus="this.value=''"> <br> <br>
+                                  <input type="text" value="Indore - 452001" size="40" name= "address" onfocus="this.value=''"> <br> <br>
                                 </div>
                             </div>
+                            <div class="row">
+                              <div class="col">
+                               <label for="numcust" > Mobile Number 📱- &nbsp </label>
+                               <input type="text" value="+91-7777777777"  name= "numcust" onfocus="this.value=''"> <br> <br>
+                              </div>
+                            </div>
                         </div>
-                    </div>
+                     </div>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Items Purchased</h5>
+                <div class="card-body">
+                  <table class="table table-hover" id="myTable">
+                    <tr>
+                      <th> # </th>
+                      <th> Item Name </th>
+                      <th> Quantity </th>
+                      <th> Rate </th>
+                      <th> Amount </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" value="1" size="2" name= "sno" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="Cotton Candy" size="28" name= "itemname" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="3" size="5" name= "quantity" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="$1.99" size="5" name= "rate" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="$3.98" size="5" name= "amount" onfocus="this.value=''">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" value="2" size="2" name= "sno" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="Cotton Candy" size="28" name= "itemname" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="3" size="5" name= "quantity" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="$1.99" size="5" name= "rate" onfocus="this.value=''">
+                      </td>
+                      <td>
+                        <input type="text" value="$3.98" size="5" name= "amount" onfocus="this.value=''">
+                      </td>
+                    </tr>
+                  </table>
+                  <br>
+                  <button class = "btn btn-outline-warning" onclick="addTableRow()">Add a new Row</button>
                 </div>
               </div>
             </div>
           </div>
          </div>
-    </div>
+    
+    
     <!-- Optional JavaScript -->
     <script src="./main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
